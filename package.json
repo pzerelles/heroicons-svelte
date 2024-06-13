@@ -1,5 +1,5 @@
 {
-  "name": "heroicons-svelte",
+  "name": "@pzerelles/heroicons-svelte",
   "version": "2.1.3",
   "scripts": {
     "dev": "vite dev",
