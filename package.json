@@ -1,6 +1,6 @@
 {
   "name": "@pzerelles/heroicons-svelte",
-  "version": "2.1.5",
+  "version": "2.2.0",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
@@ -16,15 +16,18 @@
   "exports": {
     "./16/solid": {
       "types": "./dist/16/solid/index.d.ts",
-      "svelte": "./dist/16/solid/index.js"
+      "svelte": "./dist/16/solid/index.js",
+      "default": "./dist/16/solid/index.js"
     },
     "./16/solid/*.svelte": {
       "types": "./dist/16/solid/*.svelte.d.ts",
-      "svelte": "./dist/16/solid/*.svelte"
+      "svelte": "./dist/16/solid/*.svelte",
+      "default": "./dist/16/solid/*.svelte"
     },
     "./20/solid": {
       "types": "./dist/20/solid/index.d.ts",
-      "svelte": "./dist/20/solid/index.js"
+      "svelte": "./dist/20/solid/index.js",
+      "default": "./dist/20/solid/index.js"
     },
     "./20/solid/*.svelte": {
       "types": "./dist/20/solid/*.svelte.d.ts",
@@ -53,42 +56,33 @@
     "!dist/**/*.spec.*"
   ],
   "peerDependencies": {
-    "svelte": "^5.0.0-next.1"
+    "svelte": "^5.0.0"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.2.1",
-    "@sveltejs/kit": "^2.5.10",
-    "@sveltejs/package": "^2.3.1",
-    "@sveltejs/vite-plugin-svelte": "^3.1.1",
-    "@types/eslint": "^8.56.10",
-    "@types/node": "^20.14.2",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^9.4.0",
+    "@sveltejs/adapter-auto": "^4.0.0",
+    "@sveltejs/kit": "^2.17.2",
+    "@sveltejs/package": "^2.3.10",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.13.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.20.1",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-svelte": "^2.39.3",
-    "globals": "^15.4.0",
-    "postcss": "^8.4.38",
-    "prettier": "^3.3.2",
-    "prettier-plugin-svelte": "^3.2.4",
-    "prettier-plugin-tailwindcss": "^0.6.3",
+    "eslint-plugin-svelte": "^2.46.1",
+    "globals": "^16.0.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.5.1",
+    "prettier-plugin-svelte": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "publint": "^0.1.16",
     "svelte": "5.0.0-next.154",
-    "svelte-check": "^3.8.0",
-    "tailwindcss": "^3.4.4",
-    "tslib": "^2.6.3",
-    "tsx": "^4.15.2",
-    "typescript": "^5.4.5",
+    "svelte-check": "^4.1.4",
+    "tailwindcss": "^3.4.17",
+    "tslib": "^2.8.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
     "typescript-eslint": "8.0.0-alpha.30",
-    "vite": "^5.2.13"
+    "vite": "^6.1.1"
   },
-  "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "type": "module",
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "svelte": "^5.0.0-next.1"
-      }
-    }
-  }
+  "type": "module"
 }
