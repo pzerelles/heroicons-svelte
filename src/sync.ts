@@ -17,7 +17,7 @@ const createComponents = async (variant: string, defaultClass: string) => {
     const componentName = formatName(name)
     await writeFile(
       `${targetDir}/${componentName}.svelte`,
-      `<script lang="ts">\n  let { class: className = "${defaultClass}", ...props } = $props()\n</script>\n\n${svg.replace(/<svg[^>]+>/, (value) => `${value.slice(0, -1)} class={className} {...props}>`)}`,
+      `<script lang="ts">import type { SvelteHTMLElements } from "svelte/elements"\n\n  let { class: className = "${defaultClass}", ...props }: SvelteHTMLElements["svg"] = $props()\n</script>\n\n${svg.replace(/<svg[^>]+>/, (value) => `${value.slice(0, -1)} class={className} {...props}>`)}`,
       { encoding: "utf8" }
     )
     exports += `export { default as ${componentName} } from "./${componentName}.svelte"\n`

@@ -1,13 +1,13 @@
 {
   "name": "@pzerelles/heroicons-svelte",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && npm run package",
-    "sync": "tsx ./src/sync.ts",
+    "build": "vite build && bun run package",
+    "sync": "bun ./src/sync.ts",
     "preview": "vite preview",
     "package": "svelte-kit sync && svelte-package && publint",
-    "prepublishOnly": "npm run package",
+    "prepublishOnly": "bun run package",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check . && eslint .",
@@ -56,33 +56,31 @@
     "!dist/**/*.spec.*"
   ],
   "peerDependencies": {
-    "svelte": "^5.0.0"
+    "svelte": "^5.16.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^4.0.0",
-    "@sveltejs/kit": "^2.17.2",
+    "@sveltejs/kit": "^2.20.1",
     "@sveltejs/package": "^2.3.10",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tailwindcss/vite": "^4.0.14",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^22.13.4",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.20.1",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.46.1",
     "globals": "^16.0.0",
-    "postcss": "^8.5.3",
-    "prettier": "^3.5.1",
+    "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "publint": "^0.1.16",
-    "svelte": "5.0.0-next.154",
-    "svelte-check": "^4.1.4",
-    "tailwindcss": "^3.4.17",
+    "svelte": "^5.23.2",
+    "svelte-check": "^4.1.5",
+    "tailwindcss": "^4.0.14",
     "tslib": "^2.8.1",
-    "tsx": "^4.19.3",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "8.0.0-alpha.30",
-    "vite": "^6.1.1"
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.2.2"
   },
   "type": "module"
 }
