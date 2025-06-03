@@ -1,6 +1,6 @@
 {
   "name": "@pzerelles/heroicons-svelte",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && bun run package",
@@ -31,23 +31,28 @@
     },
     "./20/solid/*.svelte": {
       "types": "./dist/20/solid/*.svelte.d.ts",
-      "svelte": "./dist/20/solid/*.svelte"
+      "svelte": "./dist/20/solid/*.svelte",
+      "default": "./dist/20/solid/*.svelte"
     },
     "./24/outline": {
       "types": "./dist/24/outline/index.d.ts",
-      "svelte": "./dist/24/outline/index.js"
+      "svelte": "./dist/24/outline/index.js",
+      "default": "./dist/24/outline/index.js"
     },
     "./24/outline/*.svelte": {
       "types": "./dist/24/outline/*.svelte.d.ts",
-      "svelte": "./dist/24/outline/*.svelte"
+      "svelte": "./dist/24/outline/*.svelte",
+      "default": "./dist/24/outline/*.svelte"
     },
     "./24/solid": {
       "types": "./dist/24/solid/index.d.ts",
-      "svelte": "./dist/24/solid/index.js"
+      "svelte": "./dist/24/solid/index.js",
+      "default": "./dist/24/solid/index.js"
     },
     "./24/solid/*.svelte": {
       "types": "./dist/24/solid/*.svelte.d.ts",
-      "svelte": "./dist/24/solid/*.svelte"
+      "svelte": "./dist/24/solid/*.svelte",
+      "default": "./dist/24/solid/*.svelte"
     }
   },
   "files": [
